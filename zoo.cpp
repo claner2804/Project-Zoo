@@ -87,8 +87,8 @@ void Zoo::fuetterungszeit() {
     std::cout << "Fütterungszeit!" << std::endl;
 
 
-    //30 iterationen lang
-    for(int i = 0; i < 5; i++) {
+    //10 iterationen lang
+    for(int i = 0; i < 10; i++) {
 
         sleep(2);
 
@@ -114,6 +114,8 @@ void Zoo::fuetterungszeit() {
             // Zufälliges Futter holen
             int foodId = rand() % allefutter.size();
             std::cout << "FutterID: " << foodId << std::endl;
+            //futter beim namen nennen
+            std::cout << "Futter: " << allefutter[foodId][foodId]->getType() << std::endl;
 
             //wenn das futter noch in der map existiert
             if (allefutter.find(foodId) == allefutter.end()) {
