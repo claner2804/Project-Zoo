@@ -114,8 +114,6 @@ void Zoo::fuetterungszeit() {
             // Zufälliges Futter holen
             int foodId = rand() % allefutter.size();
             std::cout << "FutterID: " << foodId << std::endl;
-            //futter beim namen nennen
-            std::cout << "Futter: " << allefutter[foodId][foodId]->getType() << std::endl;
 
             //wenn das futter noch in der map existiert
             if (allefutter.find(foodId) == allefutter.end()) {
@@ -125,6 +123,8 @@ void Zoo::fuetterungszeit() {
 
             try {
                 Futter *food = allefutter[foodId][foodId];
+                //futter beim namen nennen
+                std::cout << "Futter: " << allefutter[foodId][foodId]->getType() << std::endl;
                 tier.second->fuettern(*food);
 
             } catch (TierIstSattException &e) {
