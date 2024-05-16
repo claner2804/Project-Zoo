@@ -14,7 +14,7 @@ protected:
     //zufallszahl zwischen 2000 und 6000
     float gewicht = rand() % 4000 + 2000;
     std::string tierTyp = "Elephant";
-    std::string magEssen = "Alle Pflanzenarten";
+    std::string magEssen = "Pflanzen";
 
 public:
 

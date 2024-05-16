@@ -7,6 +7,7 @@
 
 
 #include "futter.h"
+#include <iostream>
 
 class Tier {
 
@@ -40,6 +41,10 @@ public:
 
     //Gibt die Art des Tieres zurück ("Tiger", "Elephant", "Panda" oder "Dachs")
     virtual std::string getTierArt();
+
+
+    virtual ~Tier(){
+}
 };
 
 

@@ -12,9 +12,6 @@
 // gelöscht werden.
 int Panda::fuettern(Futter &futter) {
     if(futter.getType() == magEssen) {
-        //futter verbrauchen und löschen
-        delete &futter;
-        std::cout << "futter verbraucht und gelöscht" << std::endl;
         throw TierIstSattException("Panda mag das und ist jetzt satt");
     } else {
         throw TierMagFutterNichtException("Panda mag Futter nicht");
@@ -42,5 +39,5 @@ Panda::Panda() {
 }
 
 Panda::~Panda() {
-    std::cout << "Panda gestorben" << std::endl;
+    std::cout << "Panda geht schlafen" << std::endl;
 }

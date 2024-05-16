@@ -27,8 +27,10 @@ class Zoo {
     //innere map: tierid, tier*
     std::map<int, std::map<int, Tier*>> tiere;
 
-    //map: futterid, futter*
-    std::map<int, Futter*> futter;
+    //map mit allen futterarten
+    //äußere map: futterart (fleisch, pflanzen)
+    //innere map: futterid, futter*
+    std::map<int, std::map<int, Futter*>> allefutter;
 
 
 public:
@@ -41,6 +43,11 @@ public:
     // Der Rückgabewert ist eine ID, die das
     // jeweilige Tier eindeutig identifiziert.
     int addTier (Tier* tier);
+
+
+    //Fügt ein neues Futter zum Zoo hinzu.
+    // Der Rückgabewert ist eine ID
+    int addFutter (Futter* futter);
 
 
     //Gibt das Tier mit der angegebenen ID zurück.

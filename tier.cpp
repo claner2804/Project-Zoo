@@ -30,7 +30,6 @@ float Tier::getGewicht() {
 // nicht an ein anderes Tier verfüttert werden,
 // sondern muss gelöscht werden.
 int Tier::fuettern(Futter &futter) {
-    //todo: implement
     return 0;
 }
 

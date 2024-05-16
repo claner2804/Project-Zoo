@@ -7,9 +7,6 @@
 
 int Elephant::fuettern(Futter &futter) {
     if(futter.getType() == magEssen) {
-        //futter verbrauchen und löschen
-        delete &futter;
-        std::cout << "futter verbraucht und gelöscht" << std::endl;
         throw TierIstSattException("Elephant mag das und ist jetzt satt");
     } else {
         throw TierMagFutterNichtException("Elephant mag Futter nicht");
@@ -38,5 +35,5 @@ Elephant::Elephant() {
 }
 
 Elephant::~Elephant() {
-    std::cout << "Elefant gestorben" << std::endl;
+    std::cout << "Elefant geht schlafen" << std::endl;
 }

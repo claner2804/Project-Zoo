@@ -15,7 +15,11 @@ public:
         return "Fleisch";
     }
 
+    virtual ~Fleisch() {
+    }
+
 };
+
 
 
 #endif //ZOO_FLEISCH_H

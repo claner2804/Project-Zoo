@@ -7,6 +7,7 @@
 
 #include <string>
 #include "futter.h"
+#include <iostream>
 
 class Pflanzen : public Futter{
 
@@ -15,7 +16,13 @@ public:
         return "Pflanzen";
     }
 
-    virtual std::string getPflanzenart () = 0;
+    virtual std::string getPflanzenart () {
+        return "Pflanzen";
+
+    }
+
+    virtual ~Pflanzen() {
+    }
 
 };
 

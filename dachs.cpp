@@ -7,9 +7,6 @@
 
 int Dachs::fuettern(Futter &futter) {
     if(futter.getType() == magEssen) {
-        //futter verbrauchen und löschen
-        delete &futter;
-        std::cout << "futter verbraucht und gelöscht" << std::endl;
         throw TierIstSattException("Dachs mag das und ist jetzt satt");
     } else {
         throw TierMagFutterNichtException("Dachs mag Futter nicht");
@@ -37,5 +34,5 @@ Dachs::Dachs() {
 }
 
 Dachs::~Dachs() {
-    std::cout << "Dachs gestorben" << std::endl;
+    std::cout << "Dachs geht schlafen" << std::endl;
 }

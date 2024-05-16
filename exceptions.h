@@ -35,4 +35,10 @@ public:
     explicit InvalidAnimalException(const std::string& message) : ZooException(message) {}
 };
 
+
+class InvalidFutterException : public ZooException {
+public:
+    explicit InvalidFutterException(const std::string& message) : ZooException(message) {}
+};
+
 #endif //ZOO_EXCEPTIONS_H

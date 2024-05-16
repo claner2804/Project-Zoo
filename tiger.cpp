@@ -4,6 +4,7 @@
 
 #include "tiger.h"
 #include "exceptions.h"
+#include "zoo.h"
 
 
 //Der Zoo beherbergt unterschiedliche Tiere,
@@ -22,9 +23,6 @@
 // Futter solange bis es satt ist.
 int Tiger::fuettern(Futter &futter) {
     if(futter.getType() == magEssen) {
-        //futter verbrauchen und löschen
-        delete &futter;
-        std::cout << "futter verbraucht und gelöscht" << std::endl;
         throw TierIstSattException("Tiger mag das und ist jetzt satt");
     } else {
         throw TierMagFutterNichtException("Tiger mag Futter nicht");
@@ -55,5 +53,5 @@ Tiger::Tiger() {
 }
 
 Tiger::~Tiger() {
-    std::cout << "Tiger gestorben" << std::endl;
+    std::cout << "Tiger geht schlafen" << std::endl;
 }

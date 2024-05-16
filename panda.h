@@ -15,7 +15,8 @@ protected:
     //zufallszahl zwischen 50 und 100
     float gewicht = rand() % 50 + 50;
     std::string tierTyp = "Panda";
-    std::string magEssen = "Bambus";
+    std::string magEssen = "Pflanzen";
+    //std::string magEssen = "Bambus";
 
 public:
 

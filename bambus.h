@@ -12,7 +12,7 @@ class Bambus : public Pflanzen{
 
 public:
     virtual std::string getPflanzenart() override {
-        return "Bambus";
+        return "Pflanzen";
     }
 
 };
